@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="four.subs" format="1">
+  <advance width="1233"/>
+  <outline>
+    <contour>
+      <point x="659" y="-230" type="line" name="sv02"/>
+      <point x="270" y="-230" type="line"/>
+      <point x="301" y="-68" type="line"/>
+      <point x="768" y="425" type="line" name="av01"/>
+      <point x="973" y="425" type="line"/>
+      <point x="872" y="-87" type="line" name="hr01"/>
+      <point x="981" y="-87" type="line"/>
+      <point x="954" y="-230" type="line" name="sv03"/>
+      <point x="846" y="-230" type="line"/>
+      <point x="811" y="-410" type="line" name="dv01"/>
+      <point x="623" y="-410" type="line"/>
+    </contour>
+    <contour>
+      <point x="686" y="-87" type="line" name="sv01"/>
+      <point x="750" y="243" type="line" name="hr02"/>
+      <point x="436" y="-87" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni032A" format="1">
+  <advance width="0"/>
+  <unicode hex="032A"/>
+  <outline>
+    <contour>
+      <point x="-860" y="-209" type="line" name="hr00"/>
+      <point x="-309" y="-209" type="line" name="dv01"/>
+      <point x="-373" y="-539" type="line" name="hr01"/>
+      <point x="-510" y="-539" type="line"/>
+      <point x="-472" y="-345" type="line" name="hr02"/>
+      <point x="-749" y="-345" type="line"/>
+      <point x="-787" y="-539" type="line" name="sv01"/>
+      <point x="-924" y="-539" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

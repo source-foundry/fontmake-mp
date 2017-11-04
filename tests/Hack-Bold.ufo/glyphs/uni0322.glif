@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0322" format="1">
+  <advance width="0"/>
+  <unicode hex="0322"/>
+  <outline>
+    <contour>
+      <point x="-675" y="-426" type="line" name="ab01" smooth="yes"/>
+      <point x="-955" y="-426"/>
+      <point x="-1066" y="-292"/>
+      <point x="-1066" y="41" type="curve" name="dh01" smooth="yes"/>
+      <point x="-1066" y="166" type="line" name="av01"/>
+      <point x="-775" y="166" type="line" name="hr01"/>
+      <point x="-775" y="41" type="line" name="dh02" smooth="yes"/>
+      <point x="-775" y="-139"/>
+      <point x="-724" y="-201"/>
+      <point x="-593" y="-201" type="curve" name="sv01" smooth="yes"/>
+      <point x="-554" y="-201" type="line" name="hr02"/>
+      <point x="-554" y="-426" type="line" name="ab02"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

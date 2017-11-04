@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni040F" format="1">
+  <advance width="1233"/>
+  <unicode hex="040F"/>
+  <outline>
+    <contour>
+      <point x="397" y="0" type="line" name="ab01"/>
+      <point x="3" y="0" type="line"/>
+      <point x="293" y="1493" type="line" name="hr01"/>
+      <point x="496" y="1493" type="line"/>
+      <point x="239" y="170" type="line" name="sv01"/>
+      <point x="792" y="170" type="line" name="sv02"/>
+      <point x="1049" y="1493" type="line" name="at01"/>
+      <point x="1252" y="1493" type="line"/>
+      <point x="962" y="0" type="line" name="ab02"/>
+      <point x="568" y="0" type="line"/>
+      <point x="506" y="-322" type="line" name="hr02"/>
+      <point x="335" y="-322" type="line" name="sv03"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="c6470" format="1">
+  <advance width="1233"/>
+  <outline>
+    <contour>
+      <point x="653" y="1528" type="line" name="hr00"/>
+      <point x="866" y="1528" type="line"/>
+      <point x="1024" y="1262" type="line" name="av01"/>
+      <point x="891" y="1262" type="line"/>
+      <point x="752" y="1440" type="line"/>
+      <point x="543" y="1262" type="line" name="av02"/>
+      <point x="391" y="1262" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

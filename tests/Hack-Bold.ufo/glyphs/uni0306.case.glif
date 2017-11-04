@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0306.case" format="1">
+  <advance width="0"/>
+  <outline>
+    <contour>
+      <point x="-617" y="1635" type="curve" name="dv01" smooth="yes"/>
+      <point x="-814" y="1635"/>
+      <point x="-932" y="1726"/>
+      <point x="-952" y="1899" type="curve" name="sv01"/>
+      <point x="-811" y="1899" type="line"/>
+      <point x="-784" y="1818"/>
+      <point x="-719" y="1778"/>
+      <point x="-617" y="1778" type="curve" name="hr01" smooth="yes"/>
+      <point x="-515" y="1778"/>
+      <point x="-451" y="1818"/>
+      <point x="-424" y="1899" type="curve" name="hr02"/>
+      <point x="-281" y="1899" type="line"/>
+      <point x="-301" y="1726"/>
+      <point x="-418" y="1635"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

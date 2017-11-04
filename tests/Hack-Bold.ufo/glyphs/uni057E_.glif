@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni057E" format="1">
+  <advance width="1233"/>
+  <unicode hex="057E"/>
+  <outline>
+    <contour>
+      <point x="705" y="166" type="line" name="iv01"/>
+      <point x="664" y="42"/>
+      <point x="567" y="-29"/>
+      <point x="416" y="-29" type="curve" name="dv01" smooth="yes"/>
+      <point x="205" y="-29"/>
+      <point x="97" y="110"/>
+      <point x="97" y="391" type="curve" name="dh01" smooth="yes"/>
+      <point x="97" y="1120" type="line" name="hr01"/>
+      <point x="390" y="1120" type="line"/>
+      <point x="390" y="436" type="line" name="dh02" smooth="yes"/>
+      <point x="390" y="279"/>
+      <point x="431" y="211"/>
+      <point x="530" y="211" type="curve" name="dv02" smooth="yes"/>
+      <point x="647" y="211"/>
+      <point x="705" y="308"/>
+      <point x="705" y="477" type="curve" name="sh01" smooth="yes"/>
+      <point x="705" y="1556" type="line" name="at01"/>
+      <point x="998" y="1556" type="line"/>
+      <point x="998" y="-201" type="line" name="dh04"/>
+      <point x="1136" y="-201" type="line" name="sh02"/>
+      <point x="1136" y="-426" type="line" name="ab01"/>
+      <point x="705" y="-426" type="line" name="dh03"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

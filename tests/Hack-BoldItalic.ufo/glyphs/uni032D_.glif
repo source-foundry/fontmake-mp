@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni032D" format="1">
+  <advance width="0"/>
+  <unicode hex="032D"/>
+  <outline>
+    <contour>
+      <point x="-903" y="-109" type="line" name="hr00"/>
+      <point x="-662" y="-109" type="line"/>
+      <point x="-479" y="-485" type="line" name="av01"/>
+      <point x="-657" y="-485" type="line"/>
+      <point x="-813" y="-260" type="line"/>
+      <point x="-1054" y="-485" type="line" name="av02"/>
+      <point x="-1232" y="-485" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

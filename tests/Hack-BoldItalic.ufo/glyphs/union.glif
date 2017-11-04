@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="union" format="1">
+  <advance width="1233"/>
+  <unicode hex="222A"/>
+  <outline>
+    <contour>
+      <point x="616" y="0" type="curve" name="hr00" smooth="yes"/>
+      <point x="312" y="0"/>
+      <point x="182" y="173"/>
+      <point x="182" y="584" type="curve" name="sh01" smooth="yes"/>
+      <point x="182" y="1186" type="line" name="av01"/>
+      <point x="433" y="1186" type="line"/>
+      <point x="433" y="510" type="line" name="sh02" smooth="yes"/>
+      <point x="433" y="354"/>
+      <point x="500" y="267"/>
+      <point x="616" y="267" type="curve" name="sv01" smooth="yes"/>
+      <point x="732" y="267"/>
+      <point x="799" y="354"/>
+      <point x="799" y="510" type="curve" name="ah01" smooth="yes"/>
+      <point x="799" y="1186" type="line" name="av02"/>
+      <point x="1050" y="1186" type="line"/>
+      <point x="1050" y="584" type="line" name="sh03" smooth="yes"/>
+      <point x="1050" y="173"/>
+      <point x="920" y="0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>

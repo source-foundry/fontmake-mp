@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni051C" format="1">
+  <advance width="1233"/>
+  <unicode hex="051C"/>
+  <outline>
+    <contour>
+      <point x="153" y="1493" type="line" name="hr00"/>
+      <point x="344" y="1493" type="line"/>
+      <point x="254" y="283" type="line" name="iv01"/>
+      <point x="583" y="1083" type="line"/>
+      <point x="794" y="1083" type="line"/>
+      <point x="809" y="281" type="line" name="iv02"/>
+      <point x="1186" y="1493" type="line" name="at01"/>
+      <point x="1384" y="1493" type="line"/>
+      <point x="874" y="0" type="line" name="ab01"/>
+      <point x="680" y="0" type="line"/>
+      <point x="649" y="870" type="line" name="iv03"/>
+      <point x="278" y="0" type="line" name="ab02"/>
+      <point x="90" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2017-07-11 17:15:08 +0000</string>
+    </dict>
+  </lib>
+</glyph>
