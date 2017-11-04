@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# ================================================================
+#  fmp.py
+#    Parallel fontmake font builds from UFO source
+#
+#   Copyright 2017 Christopher Simpkins
+#   MIT License
+# ================================================================
+
 import sys
 import os
 import traceback
