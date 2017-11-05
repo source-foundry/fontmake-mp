@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# ================================================================
+# ==================================================================
 #  fmp.py
-#    Parallel fontmake font builds from UFO source
+#    Concurrent font compilation from UFO source files with fontmake
 #
 #   Copyright 2017 Christopher Simpkins
 #   MIT License
-# ================================================================
+#
+#   Source Repository: https://github.com/source-foundry/fontmake-mp
+# ==================================================================
 
 import sys
 import os
