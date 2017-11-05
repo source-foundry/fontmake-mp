@@ -17,7 +17,7 @@ from multiprocessing import Lock, Pool, cpu_count
 from fontmake.font_project import FontProject
 
 PROCESSES = 0
-build_file_type = ('ttf', 'otf')
+BUILD_FILE_TYPE = ('ttf', 'otf')
 
 lock = Lock()
 
@@ -64,12 +64,13 @@ def main(argv):
 
         p = Pool(processes)
         p.map(build_fonts, source_path_list)
+        sys.exit(0)
 
 
 def build_fonts(ufo_path):
     try:
         fp = FontProject()
-        fp.run_from_ufos(ufo_path, output=build_file_type)
+        fp.run_from_ufos(ufo_path, output=BUILD_FILE_TYPE)
     except Exception as e:
         lock.acquire()
         print(" ")
