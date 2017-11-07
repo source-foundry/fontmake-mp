@@ -27,6 +27,33 @@ def test_missing_args(capsys):
     assert pytest_wrapped_e.value.code == 1
 
 
+def test_missing_file_name_badpath(capsys):
+    with pytest.raises(SystemExit) as pytest_wrapped_e:
+        main([".ufo"])
+
+    out, err = capsys.readouterr()
+    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.value.code == 1
+
+
+def test_not_ufo_path_badpath(capsys):
+    with pytest.raises(SystemExit) as pytest_wrapped_e:
+        main(["bogus.dir"])
+
+    out, err = capsys.readouterr()
+    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.value.code == 1
+
+
+def test_not_existing_ufopath_badpath(capsys):
+    with pytest.raises(SystemExit) as pytest_wrapped_e:
+        main(["bogus.ufo"])
+
+    out, err = capsys.readouterr()
+    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.value.code == 1
+
+
 def test_single_font_build(capsys):
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         main(["tests/Hack-Regular.ufo"])

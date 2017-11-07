@@ -35,8 +35,20 @@ def main(argv):
                          "arguments to the script." + os.linesep)
         sys.exit(1)
 
-    # TODO: add .ufo file extension check + confirmation that directory path exists
+    for arg in argv:
+        if len(arg) < 5:                # not a proper *.ufo file path
+            sys.stderr.write("[ERROR] '" + arg + "' is not properly formatted as a path to a UFO source "
+                                                 "directory" + os.linesep)
+            sys.exit(1)
+        elif not arg[-4:] == ".ufo":    # does not end with .ufo directory extension
+            sys.stderr.write("[ERROR] '" + arg + "' does not appear to be a UFO source directory" + os.linesep)
+            sys.exit(1)
+        elif not os.path.isdir(arg):    # is not an existing directory path
+            sys.stderr.write("[ERROR] '" + arg + "' does not appear to be a valid path to a UFO source "
+                                                 "directory" + os.linesep)
+            sys.exit(1)
 
+    # begin compile
     print(" ")
     print("[*] Beginning compile...")
 
