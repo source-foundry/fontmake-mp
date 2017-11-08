@@ -7,15 +7,17 @@ fontmake-mp is a Python script (`fmp.py`) that adds parallel UFO source compilat
 
 And it makes a difference.
 
+Benchmarks for `otf` + `ttf` builds x 4 variant UFO source in sequence vs. in parallel:
 
 
 <img src="https://github.com/source-foundry/fontmake-mp/raw/master/img/benchmarks-crunch.png" alt="fontmake-mp benchmarks" />
 
-
+[Details](BENCHMARKS.md)
 
 ## Install
 
 ### Install fontmake
+
 fontmake must be installed on your system to use this script.  You can install fontmake with the command:
 
 ```
@@ -40,7 +42,7 @@ $ curl -L -O https://raw.githubusercontent.com/source-foundry/fontmake-mp/master
 
 ## Usage
 
-By default, `fmp.py` build both `.ttf` and `.otf` fonts during the compilation process.  This can be modified as necessary to one or the other of these file types (see Manual modifications section below). 
+By default, `fmp.py` compiles both `.ttf` and `.otf` fonts during the compilation process.  This can be modified as needed to one or the other of these file types (see Manual modifications section below). 
 
 The format for command line usage is the following:
 
@@ -48,7 +50,7 @@ The format for command line usage is the following:
 $ python fmp.py [UFO path 1] [UFO path 2] ... [UFO path n]
 ```
 
-Faster compiles can be achieved for some users with the use of the PyPy interpreter rather than the cPython interpreter.  Install [PyPy](http://pypy.org/) on your system and execute the script with the following command:
+Faster compiles can be achieved for some users with the use of the PyPy interpreter rather than the cPython interpreter.  Install [PyPy](http://pypy.org/) on your system, [create a virtualenv environment for PyPy](http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv), install fontmake (see above), and execute the script with the following command:
 
 ```
 $ pypy fmp.py [UFO path 1] [UFO path 2] ... [UFO path n]
@@ -56,11 +58,12 @@ $ pypy fmp.py [UFO path 1] [UFO path 2] ... [UFO path n]
 
 `fmp.py` will spawn a new process for each UFO source directory of multi-font builds up to the number of available cores on your system as determined by the Python `multiprocessing.cpu_count()` method.
 
+
 ### Manual modifications
 
 #### Change spawned process number
 
-To manually set the spawned process number, modify the `PROCESSES` constant integer at the top of the `fmp.py` file to the desired number of processes.
+To manually set the spawned process number, modify the `PROCESSES` constant integer at the top of the `fmp.py` file to the desired number of processes.  `fmp.py` will automatically decrease this number to the number of requested UFO compiles when the latter number is less than the requested number of spawned processes.  This means that you can set this to the total number of CPU on your system and the script will always spawn the number of processes that match your UFO compilation requests up to a maximum of your setting.
 
 
 #### Change build file type
@@ -81,7 +84,7 @@ BUILD_FILE_TYPE = ('otf')
 
 ## Acknowledgments
 
-fontmake-mp is a script built on the excellent [fontmake](https://github.com/googlei18n/fontmake) project where all of the hard work happens.
+fontmake-mp is built on the excellent [fontmake](https://github.com/googlei18n/fontmake) project where all of the hard work happens.
 
 ## License
 
