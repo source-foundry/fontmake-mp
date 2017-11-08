@@ -8,7 +8,7 @@ The benchmarks displayed on the README.md page were executed with the following:
 - macOS 10.12.6
 
 
-### Python interpreters
+### Python
 
 - cPython 3.6.3
 - PyPy 5.9.0
