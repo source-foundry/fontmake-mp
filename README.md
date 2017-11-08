@@ -56,7 +56,7 @@ Faster compiles can be achieved for some users with the use of the PyPy JIT comp
 $ pypy fmp.py [UFO path 1] [UFO path 2] ... [UFO path n]
 ```
 
-`fmp.py` will spawn a new process for each UFO source directory of multi-font builds up to the number of available cores on your system as determined by the Python `multiprocessing.cpu_count()` method.
+`fmp.py` will spawn a new process for each UFO source directory in a multi-font build request up to the number of available cores on your system.  This value is determined by the Python `multiprocessing.cpu_count()` method.
 
 
 ### Manual modifications
