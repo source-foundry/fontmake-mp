@@ -35,17 +35,17 @@ def main(argv):
                          "arguments to the script." + os.linesep)
         sys.exit(1)
 
-    for arg in argv:
-        if len(arg) < 5:                # not a proper *.ufo file path
-            sys.stderr.write("[ERROR] '" + arg + "' is not properly formatted as a path to a UFO source "
-                                                 "directory" + os.linesep)
+    for source_path in source_path_list:
+        if len(source_path) < 5:                # not a proper *.ufo file path
+            sys.stderr.write("[ERROR] '" + source_path + "' is not properly formatted as a path to a UFO source "
+                             "directory" + os.linesep)
             sys.exit(1)
-        elif not arg[-4:] == ".ufo":    # does not end with .ufo directory extension
-            sys.stderr.write("[ERROR] '" + arg + "' does not appear to be a UFO source directory" + os.linesep)
+        elif not source_path[-4:] == ".ufo":    # does not end with .ufo directory extension
+            sys.stderr.write("[ERROR] '" + source_path + "' does not appear to be a UFO source directory" + os.linesep)
             sys.exit(1)
-        elif not os.path.isdir(arg):    # is not an existing directory path
-            sys.stderr.write("[ERROR] '" + arg + "' does not appear to be a valid path to a UFO source "
-                                                 "directory" + os.linesep)
+        elif not os.path.isdir(source_path):    # is not an existing directory path
+            sys.stderr.write("[ERROR] '" + source_path + "' does not appear to be a valid path to a UFO source "
+                             "directory" + os.linesep)
             sys.exit(1)
 
     # begin compile
