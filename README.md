@@ -50,7 +50,7 @@ The format for command line usage is the following:
 $ python fmp.py [UFO path 1] [UFO path 2] ... [UFO path n]
 ```
 
-Faster compiles can be achieved for some users with the use of the PyPy interpreter rather than the cPython interpreter.  Install [PyPy](http://pypy.org/) on your system, [create a virtualenv environment for PyPy](http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv), install fontmake (see above), and execute the script with the following command:
+Faster compiles can be achieved for some users with the use of the PyPy JIT compiler rather than the cPython interpreter.  Install [PyPy](http://pypy.org/) on your system, [create a virtualenv environment for PyPy](http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv), install fontmake (see above), and execute the script with the following command:
 
 ```
 $ pypy fmp.py [UFO path 1] [UFO path 2] ... [UFO path n]
