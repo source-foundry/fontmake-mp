@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fontmake-mp',
-    version='0.9.0',
+    version='0.9.1',
     description='A font vertical metrics reporting and line spacing adjustment tool',
     url='https://github.com/source-foundry/fontmake-mp',
     license='MIT license',
