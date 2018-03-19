@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # ==================================================================
-#  fmp.py
+#  fmp.py v0.9.1
 #    Concurrent font compilation from UFO source files with fontmake
 #
 #   Copyright 2018 Christopher Simpkins
