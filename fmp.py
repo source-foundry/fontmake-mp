@@ -50,7 +50,7 @@ def main(argv):
 
     # begin compile
     print(" ")
-    print("[*] Beginning compile...")
+    print("[*] Beginning fontmake-mp font compile...")
 
     if len(source_path_list) == 1:
         # there is only one source compile necessary, skip spawning of processes and just build it
@@ -64,15 +64,15 @@ def main(argv):
             processes = cpu_count()
             print("[*] Detected " + str(cpu_count()) + " cores...")
         else:
-            print("[*] User request to spawn " + str(processes) + " processes for compilation...")
+            print("[*] Spawning " + str(processes) + " processes for the compile...")
 
         # if total cores available is greater than number of font compiles requested, limit to the latter number
         if processes > len(source_path_list):
             processes = len(source_path_list)
-            print("[*] Limiting spawned process number to the number of font compiles "
+            print("[*] Limiting spawned process number to the number of font compiles needed "
                   "(" + str(processes) + ")...")
 
-        print("[*] Output from fontmake will appear out of order below. This is expected...")
+        print("[*] Output from the fontmake compiler will appear out of order below. This is expected...")
         print(" ")
         print(" ")
 
