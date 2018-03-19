@@ -5,7 +5,7 @@
 #  fmp.py
 #    Concurrent font compilation from UFO source files with fontmake
 #
-#   Copyright 2017 Christopher Simpkins
+#   Copyright 2018 Christopher Simpkins
 #   MIT License
 #
 #   Source Repository: https://github.com/source-foundry/fontmake-mp
@@ -31,7 +31,7 @@ def main(argv):
 
     # Command line error handling
     if len(source_path_list) == 0:
-        sys.stderr.write("[ERROR] Please include one or more paths to UFO source directories as " 
+        sys.stderr.write("[ERROR] Please include one or more paths to UFO source directories as "
                          "arguments to the script." + os.linesep)
         sys.exit(1)
 
