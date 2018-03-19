@@ -59,7 +59,6 @@ def test_single_font_build(capsys):
         main(["tests/Hack-Regular.ufo"])
 
     out, err = capsys.readouterr()
-    assert "Converting curves for Hack-Regular" in err
     assert pytest_wrapped_e.type == SystemExit
     assert pytest_wrapped_e.value.code == 0
     assert os.path.exists("master_ttf") and os.path.isdir("master_ttf")
