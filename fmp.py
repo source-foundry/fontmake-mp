@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # ==================================================================
-#  fmp.py v0.9.1
+#  fmp.py v1.0.0
 #    Concurrent font compilation from UFO source files with fontmake
 #
 #   Copyright 2018 Christopher Simpkins
@@ -19,7 +19,7 @@ from multiprocessing import Lock, Pool, cpu_count
 from fontmake.font_project import FontProject
 
 PROCESSES = 0
-BUILD_FILE_TYPE = ('ttf', 'otf')
+BUILD_FILE_TYPE = ("ttf", "otf")
 
 lock = Lock()
 
@@ -31,21 +31,38 @@ def main(argv):
 
     # Command line error handling
     if len(source_path_list) == 0:
-        sys.stderr.write("[ERROR] Please include one or more paths to UFO source directories as "
-                         "arguments to the script." + os.linesep)
+        sys.stderr.write(
+            "[ERROR] Please include one or more paths to UFO source directories as "
+            "arguments to the script." + os.linesep
+        )
         sys.exit(1)
 
     for source_path in source_path_list:
-        if len(source_path) < 5:                # not a proper *.ufo file path
-            sys.stderr.write("[ERROR] '" + source_path + "' is not properly formatted as a path to a UFO source "
-                             "directory" + os.linesep)
+        if len(source_path) < 5:  # not a proper *.ufo file path
+            sys.stderr.write(
+                "[ERROR] '"
+                + source_path
+                + "' is not properly formatted as a path to a UFO source "
+                "directory" + os.linesep
+            )
             sys.exit(1)
-        elif not source_path[-4:] == ".ufo":    # does not end with .ufo directory extension
-            sys.stderr.write("[ERROR] '" + source_path + "' does not appear to be a UFO source directory" + os.linesep)
+        elif (
+            not source_path[-4:] == ".ufo"
+        ):  # does not end with .ufo directory extension
+            sys.stderr.write(
+                "[ERROR] '"
+                + source_path
+                + "' does not appear to be a UFO source directory"
+                + os.linesep
+            )
             sys.exit(1)
-        elif not os.path.isdir(source_path):    # is not an existing directory path
-            sys.stderr.write("[ERROR] '" + source_path + "' does not appear to be a valid path to a UFO source "
-                             "directory" + os.linesep)
+        elif not os.path.isdir(source_path):  # is not an existing directory path
+            sys.stderr.write(
+                "[ERROR] '"
+                + source_path
+                + "' does not appear to be a valid path to a UFO source "
+                "directory" + os.linesep
+            )
             sys.exit(1)
 
     # begin compile
@@ -54,7 +71,9 @@ def main(argv):
 
     if len(source_path_list) == 1:
         # there is only one source compile necessary, skip spawning of processes and just build it
-        print("[*] Single font compile requested. Concurrency is not necessary.  No additional processes spawned...")
+        print(
+            "[*] Single font compile requested. Concurrency is not necessary.  No additional processes spawned..."
+        )
         print(" ")
         build_fonts(source_path_list[0])
         sys.exit(0)
@@ -69,10 +88,14 @@ def main(argv):
         # if total cores available is greater than number of font compiles requested, limit to the latter number
         if processes > len(source_path_list):
             processes = len(source_path_list)
-            print("[*] Limiting spawned process number to the number of font compiles needed "
-                  "(" + str(processes) + ")...")
+            print(
+                "[*] Limiting spawned process number to the number of font compiles needed "
+                "(" + str(processes) + ")..."
+            )
 
-        print("[*] Output from the fontmake compiler will appear out of order below. This is expected...")
+        print(
+            "[*] Output from the fontmake compiler will appear out of order below. This is expected..."
+        )
         print(" ")
         print(" ")
 
@@ -88,8 +111,12 @@ def build_fonts(ufo_path):
     except Exception as e:
         lock.acquire()
         print(" ")
-        print("[ERROR] The fontmake compile for " + ufo_path + " failed with the following error"
-              ":" + os.linesep)
+        print(
+            "[ERROR] The fontmake compile for "
+            + ufo_path
+            + " failed with the following error"
+            ":" + os.linesep
+        )
         sys.stdout.flush()
         traceback.print_exc()
         print(str(e))
@@ -97,5 +124,5 @@ def build_fonts(ufo_path):
         lock.release()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv[1:])

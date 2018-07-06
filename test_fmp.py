@@ -14,8 +14,8 @@ def test_default_process_constant():
 
 
 def test_default_build_types():
-    assert 'ttf' in fmp.BUILD_FILE_TYPE
-    assert 'otf' in fmp.BUILD_FILE_TYPE
+    assert "ttf" in fmp.BUILD_FILE_TYPE
+    assert "otf" in fmp.BUILD_FILE_TYPE
 
 
 def test_missing_args(capsys):
@@ -74,7 +74,12 @@ def test_single_font_build(capsys):
 
 
 def test_multiple_font_build(capsys):
-    ufo_paths = ["tests/Hack-Regular.ufo", "tests/Hack-Italic.ufo", "tests/Hack-Bold.ufo", "tests/Hack-BoldItalic.ufo"]
+    ufo_paths = [
+        "tests/Hack-Regular.ufo",
+        "tests/Hack-Italic.ufo",
+        "tests/Hack-Bold.ufo",
+        "tests/Hack-BoldItalic.ufo",
+    ]
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         main(ufo_paths)
 
