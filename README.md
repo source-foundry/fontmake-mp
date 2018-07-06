@@ -1,5 +1,7 @@
-# fontmake-mp [![Build Status](https://semaphoreci.com/api/v1/sourcefoundry/fontmake-mp/branches/master/badge.svg)](https://semaphoreci.com/sourcefoundry/fontmake-mp)
+# fontmake-mp 
 
+[![Build Status](https://semaphoreci.com/api/v1/sourcefoundry/fontmake-mp/branches/master/badge.svg)](https://semaphoreci.com/sourcefoundry/fontmake-mp)
+[![GitHub release](https://img.shields.io/github/release/source-foundry/fontmake-mp.svg?style=flat-square)](https://github.com/source-foundry/fontmake-mp/releases/latest)
 
 ## About
 
