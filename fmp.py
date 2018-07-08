@@ -30,7 +30,7 @@ HELP = """
 ===================================================================
  fontmake-mp
    Parallel font compilation from UFO source files with fontmake
-   
+
    Copyright 2018 Christopher Simpkins
    MIT License
 
@@ -44,14 +44,14 @@ Execute fontmake-mp with the fmp.py Python script (located in the root of reposi
 Usage:
   Execution of Python script:
      $ python fmp.py (--ttf|--otf) [UFO file path 1] (UFO file path ...)
-     
+
   Execution of executable file installed on system PATH
      $ fontmake-mp (--ttf|--otf) [UFO file path 1] (UFO file path ...)
-     
+
 Options:
   --otf          Build *.otf files only (optional, default=*.otf AND *.ttf)
   --ttf          Build *.ttf files only (optional, default=*.otf AND *.ttf)
-  
+
   -h, --help     Display help text
       --usage    Display application usage
   -v, --version  Display application version
