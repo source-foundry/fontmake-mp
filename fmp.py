@@ -62,7 +62,9 @@ Fonts are compiled in the working directory on the directory path(s) master_otf 
 
 def main(argv):
     if len(argv) == 0:
-        sys.stderr.write("[ERROR] Please include at least one UFO path in your command." + os.linesep)
+        sys.stderr.write(
+            "[ERROR] Please include at least one UFO path in your command." + os.linesep
+        )
         sys.exit(1)
     # help, version, usage flag handling
     if argv[0] in ("-h", "--help"):
@@ -139,9 +141,7 @@ def main(argv):
 
     if len(source_path_list) == 1:
         # there is only one source compile necessary, skip spawning of processes and just build it
-        print(
-            "[*] Single font compile requested. No additional processes spawned..."
-        )
+        print("[*] Single font compile requested. No additional processes spawned...")
         print(" ")
 
         # begin compile
