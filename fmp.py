@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# ==================================================================
-#  fmp.py v1.0.0
+# ===================================================================
+#  fmp.py
 #    Concurrent font compilation from UFO source files with fontmake
 #
 #   Copyright 2018 Christopher Simpkins
 #   MIT License
 #
 #   Source Repository: https://github.com/source-foundry/fontmake-mp
-# ==================================================================
+# ===================================================================
 
 import sys
 import os
@@ -23,10 +23,58 @@ BUILD_FILE_TYPE = ("ttf", "otf")
 
 lock = Lock()
 
+VERSION_NUMBER = "1.0.0"
+VERSION = "fontmake-mp v" + VERSION_NUMBER
+USAGE = "[./fmp.py|fontmake-mp] (--ttf|--otf) [UFO file path 1] (UFO file path ...)"
+HELP = """
+===================================================================
+ fontmake-mp
+   Parallel font compilation from UFO source files with fontmake
+   
+   Copyright 2018 Christopher Simpkins
+   MIT License
+
+   Source Repository: https://github.com/source-foundry/fontmake-mp
+====================================================================
+
+fontmake-mp compiles *.otf and/or *.ttf font binaries from UFO source files in parallel.
+
+Execute fontmake-mp with the fmp.py Python script (located in the root of repository) or the fontmake-mp executable (located in the repository releases).
+
+Usage:
+  Execution of Python script:
+     $ python fmp.py (--ttf|--otf) [UFO file path 1] (UFO file path ...)
+     
+  Execution of executable file installed on system PATH
+     $ fontmake-mp (--ttf|--otf) [UFO file path 1] (UFO file path ...)
+     
+Options:
+  --otf          Build *.otf files only (optional, default=*.otf AND *.ttf)
+  --ttf          Build *.ttf files only (optional, default=*.otf AND *.ttf)
+  
+  -h, --help     Display help text
+      --usage    Display application usage
+  -v, --version  Display application version
+
+Fonts are compiled in the working directory on the directory path(s) master_otf and/or master_ttf.
+"""
+
 
 def main(argv):
+    # help, version, usage flag handling
+    if argv[0] in ("-h", "--help"):
+        print(HELP)
+        sys.exit(0)
+    elif argv[0] in ("-v", "--version"):
+        print(VERSION)
+        sys.exit(0)
+    elif argv[0] == "--usage":
+        print(USAGE)
+        sys.exit(0)
+
     processes = PROCESSES
 
+    # TODO: handle --ttf and --otf options
     source_path_list = argv
 
     # Command line error handling
