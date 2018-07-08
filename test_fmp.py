@@ -13,11 +13,6 @@ def test_default_process_constant():
     assert fmp.PROCESSES == 0
 
 
-def test_default_build_types():
-    assert "ttf" in fmp.BUILD_FILE_TYPE
-    assert "otf" in fmp.BUILD_FILE_TYPE
-
-
 def test_missing_args(capsys):
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         main([])
